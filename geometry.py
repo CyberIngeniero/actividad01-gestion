@@ -43,9 +43,25 @@ class Square(Rectangle):
     def __init__(self, length):
         super().__init__(length, length)
 
+# class A
+class A(object):
+    def __init__(self, _foo, _bar):
+        self._foo = _foo
+        self._bar = _bar
+
+    def foo(self):
+        print(f'foo: {self._foo}')
+
+    def bar(self):
+        print(f'bar: {self._bar}')
+
 
 if __name__ == '__main__':
     shapes = [Square(10), Circle(20), Rectangle(3.4, 1.5)]
 
     for shape in shapes:
         print(f'{shape} area is {shape.area()}')
+
+    a = A(1, 2)
+    a.foo()
+    a.bar()
