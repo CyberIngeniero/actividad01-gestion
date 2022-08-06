@@ -64,6 +64,14 @@ class B(object):
     def show(self):
         print(f'value: {self.value}')
 
+# class C
+class C(object):
+    def __init__(self, _value):
+        self.value = _value
+
+    def show(self):
+        print(f'value: {self.value}')
+
 if __name__ == '__main__':
     shapes = [Square(10), Circle(20), Rectangle(3.4, 1.5)]
 
@@ -73,6 +81,9 @@ if __name__ == '__main__':
     a = A(1, 2)
     a.foo()
     a.bar()
-    
+
     b = B(3)
     b.show()
+
+    c = C(4)
+    c.show()
