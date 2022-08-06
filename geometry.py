@@ -48,6 +48,7 @@ class A(object):
     def __init__(self, _foo, _bar):
         self._foo = _foo
         self._bar = _bar
+        self.lorem = 'lorem'
 
     def foo(self):
         print(f'foo: {self._foo}')
@@ -81,6 +82,7 @@ if __name__ == '__main__':
     a = A(1, 2)
     a.foo()
     a.bar()
+    print(a.lorem)
 
     b = B(3)
     b.show()
